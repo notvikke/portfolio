@@ -183,4 +183,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hi! I'm Vignesh Nambiar, a Data Analyst skilled in transforming sales and financial data into actionable insights using tools like Python, R, SQL, and Tableau. With a Master's in Business Analysis and Big Data from IE University and consulting experience at Capgemini, I bring strong communication skills and a knack for working in diverse environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
