@@ -52,21 +52,13 @@ interests:
   - Artificial Intelligence
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  
+  - area: MEng Business Analysis & Big data
+    institution: IE School of Science and Technology - Madrid
+    date_start: 2023
+    date_end: 2022
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      GPA: 3.6/4.0
 
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -183,4 +175,4 @@ awards:
 
 ## About Me
 
-Hi! I'm Vignesh Nambiar, a Data Analyst skilled in transforming sales and financial data into actionable insights using tools like Python, R, SQL, and Tableau. With a Master's in Business Analysis and Big Data from IE University and consulting experience at Capgemini, I bring strong communication skills and a knack for working in diverse environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
+Hi! I am a Data Analyst skilled in transforming a variety of datasets into actionable insights. With a Master's in Business Analysis and Big Data from IE University in Madrid and consulting experience at Capgemini, I bring strong communication skills and a knack for working in dynamic environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
