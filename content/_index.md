@@ -35,7 +35,7 @@ sections:
       title: ' More about me!'
       subtitle: ''
       text: |-
-        I blog about machine learning, deep learning, and moonshots.
+        I blog about machine learning, deep learning, and travelling.
 
         I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
         
@@ -76,7 +76,7 @@ sections:
   - block: collection
     id: news
     content:
-      title: Recent News
+      title: Recent Posts
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
