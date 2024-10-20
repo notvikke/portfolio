@@ -31,25 +31,25 @@ role: Data Analyst
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:97vigneshvn@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+#  - icon: brands/x
+#    url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/not.vikke/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/notvikke
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/97vigneshvn/
+#  - icon: academicons/google-scholar
+#    url: https://scholar.google.com/
+#  - icon: academicons/orcid
+#    url: https://orcid.org/
 
 interests:
+  - Machine Learning
+  - Data Visualization
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
 
 education:
   - area: PhD Artificial Intelligence
