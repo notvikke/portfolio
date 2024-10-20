@@ -89,7 +89,7 @@ work:
       - Empowered clients through training, presentations, and consultations on due diligence and thorough risk assessment to devise better marketing strategies. (Qlik Sense, MySQL, Python)
       
   - position: Data Intern
-    company_name: CAPGEMINI - business Intelligence 
+    company_name: CAPGEMINI - Business Intelligence 
     company_url: ''
     company_logo: ''
     date_start: 2019-06-01
