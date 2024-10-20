@@ -55,8 +55,8 @@ education:
   
   - area: Master of Business Analysis & Big data
     institution: IE School of Science and Technology - Madrid
-    date_start: 2023
-    date_end: 2022
+    date_start: 2022-06
+    date_end: 2023-06
     summary: |
       GPA: 3.6/4.0
 
@@ -67,8 +67,8 @@ education:
       - Google Cloud Platform, AWS, Github.
   - area: B.Tech in Information Technology
     institution: Manipal University Jaipur
-    date_start: 2015
-    date_end: 2019
+    date_start: 2015-04
+    date_end: 2019-05
     summary: |
       GPA: 7/10
       
@@ -79,10 +79,10 @@ education:
 work:
   - position: Senior Data Analyst
     company_name: CAPGEMINI - business Intelligence 
-    company_url: 'https://www.capgemini.com/'
+    company_url: ''
     company_logo: ''
     date_start: 2019-01
-    date_end: '2021-3'
+    date_end: 2021-03
     summary: |
       Responsibilities include:
       - Evaluated and identified untapped sales opportunities for a leading pharmaceutical company utilizing Python, R, and Qlik Sense to analyze sales data in a time frame of 8 months fulfilling the requirements of the client.
@@ -90,7 +90,7 @@ work:
       - Strengthened client interaction, presentation and leadership skills, complemented by comprehensive training in Java, Python, SQL, Hadoop, Spark, Unix, and Talend
   - position: Global Insight Provider
     company_name: Evidencity · Part-time
-    company_url: 'https://www.evidencity.com/'
+    company_url: ''
     company_logo: ''
     date_start: 2022-11
     date_end: 2024-03
