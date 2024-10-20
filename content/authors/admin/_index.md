@@ -53,7 +53,7 @@ interests:
 
 education:
   
-  - area: MEng Business Analysis & Big data
+  - area: Master of Business Analysis & Big data
     institution: IE School of Science and Technology - Madrid
     date_start: 2023
     date_end: 2022
@@ -61,43 +61,43 @@ education:
       GPA: 3.6/4.0
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      - Machine Learning, SQL, Python, MongoDB.
+      - Neural Networks,  Natural Language Processing.
+      - MLOps, Visualization tools, Computer vision.
+      - Google Cloud Platform, AWS, Github.
+  - area: B.Tech in Information Technology
+    institution: Manipal University Jaipur
+    date_start: 2015
+    date_end: 2019
     summary: |
-      GPA: 3.4/4.0
+      GPA: 7/10
       
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Java, Data structures, DBMS, Cloud computing, 
+      - Data mining and warehousing
+      - Encryption, Network security
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+  - position: Senior Data Analyst
+    company_name: CAPGEMINI - business Intelligence 
+    company_url: 'https://www.capgemini.com/'
+    company_logo: 'https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg'
+    date_start: 2019-01
+    date_end: '2021-3'
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      - Evaluated and identified untapped sales opportunities for a leading pharmaceutical company utilizing Python, R, and Qlik Sense to analyze sales data in a time frame of 8 months fulfilling the requirements of the client.
+      - Empowered clients through training, presentations, and consultations on due diligence and thorough risk assessment to devise better marketing strategies. (Qlik Sense, MySQL, Python)
+      - Strengthened client interaction, presentation and leadership skills, complemented by comprehensive training in Java, Python, SQL, Hadoop, Spark, Unix, and Talend
+  - position: Global Insight Provider
+    company_name: Evidencity · Part-time
+    company_url: 'https://www.evidencity.com/'
+    company_logo: 'https://lirp.cdn-website.com/c1cd1e66/dms3rep/multi/opt/60d219c40567c09e9ecde119_Evidencity-20Inline-20Logo-20Color-20%28Lt-20Bgs%29-402x-p-500-1920w.png'
+    date_start: 2022-11
+    date_end: 2024-03
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Conducted comprehensive online research and executed rigorous data validation to ensure accurate analysis and deliver reliable insights.
+      
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -136,9 +136,9 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
+  - name: Hindi
+    percent: 100
+  - name: Spanish
     percent: 25
 
 # Awards.
