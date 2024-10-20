@@ -80,7 +80,7 @@ work:
   - position: Senior Data Analyst
     company_name: CAPGEMINI - business Intelligence 
     company_url: 'https://www.capgemini.com/'
-    company_logo: 'https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg'
+    company_logo: ''
     date_start: 2019-01
     date_end: '2021-3'
     summary: |2-
@@ -91,7 +91,7 @@ work:
   - position: Global Insight Provider
     company_name: Evidencity · Part-time
     company_url: 'https://www.evidencity.com/'
-    company_logo: 'https://lirp.cdn-website.com/c1cd1e66/dms3rep/multi/opt/60d219c40567c09e9ecde119_Evidencity-20Inline-20Logo-20Color-20%28Lt-20Bgs%29-402x-p-500-1920w.png'
+    company_logo: ''
     date_start: 2022-11
     date_end: 2024-03
     summary: |
