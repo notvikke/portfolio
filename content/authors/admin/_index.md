@@ -81,12 +81,21 @@ work:
     company_name: CAPGEMINI - business Intelligence 
     company_url: ''
     company_logo: ''
-    date_start: 2019-01-01
+    date_start: 2020-01-01
     date_end: 2021-03-01
     summary: |
       Responsibilities include:
       - Evaluated and identified untapped sales opportunities for a leading pharmaceutical company utilizing Python, R, and Qlik Sense to analyze sales data in a time frame of 8 months fulfilling the requirements of the client.
       - Empowered clients through training, presentations, and consultations on due diligence and thorough risk assessment to devise better marketing strategies. (Qlik Sense, MySQL, Python)
+      
+  - position: Data Intern
+    company_name: CAPGEMINI - business Intelligence 
+    company_url: ''
+    company_logo: ''
+    date_start: 2019-06-01
+    date_end: 2020-01-01
+    summary: |
+      Responsibilities include:
       - Strengthened client interaction, presentation and leadership skills, complemented by comprehensive training in Java, Python, SQL, Hadoop, Spark, Unix, and Talend
   - position: Global Insight Provider
     company_name: Evidencity · Part-time
