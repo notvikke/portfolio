@@ -53,7 +53,7 @@ interests:
 
 education:
   
-  - area: Master of Business Analysis & Big data
+  - area: MSc Business Analysis & Big data
     institution: IE School of Science and Technology - Madrid
     date_start: 2022-06-01
     date_end: 2023-06-01
@@ -65,7 +65,7 @@ education:
       - Neural Networks,  Natural Language Processing.
       - MLOps, Visualization tools, Computer vision.
       - Google Cloud Platform, AWS, Github.
-  - area: B.Tech in Information Technology
+  - area: B.Tech Information Technology
     institution: Manipal University Jaipur
     date_start: 2015-04-01
     date_end: 2019-05-01
