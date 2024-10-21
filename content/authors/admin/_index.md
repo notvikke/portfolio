@@ -78,7 +78,7 @@ education:
       - Encryption, Network security
 work:
   - position: Senior Data Analyst
-    company_name: CAPGEMINI - business Intelligence 
+    company_name: CAPGEMINI - Business Intelligence 
     company_url: ''
     company_logo: ''
     date_start: 2020-01-01
