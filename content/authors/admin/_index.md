@@ -65,11 +65,11 @@ education:
     summary: |
       GPA: 3.6/4.0
 
-      Courses included:
-      - Machine Learning, SQL, Python, MongoDB.
-      - Neural Networks,  Natural Language Processing.
-      - MLOps, Visualization tools, Computer vision.
-      - Google Cloud Platform, AWS, Github.
+      Relevent Courses:
+      - Machine Learning, Natural Language Processing.
+      - Databases (SQL, NoSQL), Python (Various packages)
+      - MLOps, Computer vision, Data Visualization with Power BI, Tableau.
+       
   - area: B.Tech Information Technology
     institution: Manipal University Jaipur
     date_start: 2015-04-01
@@ -78,34 +78,34 @@ education:
       GPA: 7/10
       
       Courses included:
-      - Java, Data structures, DBMS, Cloud computing, 
-      - Data mining and warehousing
-      - Encryption, Network security
+      - Data structures, DBMS, Cloud computing.
+      - C++, Java.
+      - Encryption, Network security, Data mining and warehousing. 
 work:
   - position: Senior Data Analyst
     company_name: CAPGEMINI - Business Intelligence 
-    company_url: ''
-    company_logo: ''
+    company_url: 'https://www.capgemini.com/'
+    company_logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Capgemini_201x_logo.svg'
     date_start: 2020-01-01
     date_end: 2021-03-01
     summary: |
-      Responsibilities include:
-      - Evaluated and identified untapped sales opportunities for a leading pharmaceutical company utilizing Python, R, and Qlik Sense to analyze sales data in a time frame of 8 months fulfilling the requirements of the client.
+      Responsibilities:
+      - Evaluated and identified untapped sales opportunities worth over 2 million US dollars for Johnson & Johnson utilizing Python, R, and Qlik Sense to analyze sales data in a time frame of 8 months fulfilling the requirements of the client. (Unicorn - Sibabrata Das and Samit Pahari)
       - Empowered clients through training, presentations, and consultations on due diligence and thorough risk assessment to devise better marketing strategies. (Qlik Sense, MySQL, Python)
       
   - position: Data Intern
     company_name: CAPGEMINI - Business Intelligence 
-    company_url: ''
-    company_logo: ''
+    company_url: 'https://www.capgemini.com/'
+    company_logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Capgemini_201x_logo.svg'
     date_start: 2019-06-01
     date_end: 2020-01-01
     summary: |
-      Responsibilities include:
+      Responsibilities:
       - Strengthened client interaction, presentation and leadership skills, complemented by comprehensive training in Java, Python, SQL, Hadoop, Spark, Unix, and Talend
   - position: Global Insight Provider
     company_name: Evidencity · Part-time
-    company_url: ''
-    company_logo: ''
+    company_url: 'https://www.evidencity.com/'
+    company_logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQFP9BcyzVY6Dw/company-logo_200_200/company-logo_200_200/0/1630521279501/evidencity_inc_logo?e=1737590400&v=beta&t=Fz-5qGu4B6IuspBPOYVJ-5ZDL6NjqCe9Yy_rbRT3vj8'
     date_start: 2022-11-01
     date_end: 2024-03-01
     summary: |
