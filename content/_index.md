@@ -18,6 +18,7 @@ sections:
       button:
         text: Download CV
         url: uploads/resume.pdf
+        focal_point: 'Center'
     design:
       css_class: dark
       background:
