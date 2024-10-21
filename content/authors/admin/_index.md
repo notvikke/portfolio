@@ -164,7 +164,7 @@ skills:
       - name: Prompt Engineering
         description: 'Proficient in prompt engineering, optimizing interactions with AI models for improved performance and accuracy.'
         percent: 90
-        icon: lightbulb
+        icon: code-bracket
 
 
 languages:
