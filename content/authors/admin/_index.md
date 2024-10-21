@@ -161,6 +161,10 @@ skills:
         description: 'Effective collaboration in diverse teams to achieve project goals.'
         percent: 90
         icon: users
+      - name: Prompt Engineering
+        description: 'Proficient in prompt engineering, optimizing interactions with AI models for improved performance and accuracy.'
+        percent: 90
+        icon: robot
 
 
 languages:
