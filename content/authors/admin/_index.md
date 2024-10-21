@@ -41,6 +41,9 @@ profiles:
     url: https://www.linkedin.com/in/97vigneshvn/
   - icon: brands/instagram
     url: https://www.instagram.com/not.vikke/
+  - icon: brands/discord
+    url: https://discordapp.com/users/177356469434318848
+    
 #  - icon: academicons/google-scholar
 #    url: https://scholar.google.com/
 #  - icon: academicons/orcid
