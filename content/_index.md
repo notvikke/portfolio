@@ -36,9 +36,12 @@ sections:
       subtitle: ''
       text: |-
         My love for travel fuels my adventurous spirit—I’m always eager to explore new places, embrace new experiences, and step outside my comfort zone.
-        Whether it’s diving into a new project, trying a unique cuisine, or simply discovering a hidden gem in a city, I approach everything with an open mind and a thirst for knowledge. This curiosity not only drives my personal adventures but also shapes my professional journey, where I’m constantly seeking to understand complex problems and uncover actionable insights.
         
-        Please reach out to collaborate 😃
+        Whether it’s diving into a new project, trying a unique cuisine, or simply discovering a hidden gem in a city, I approach everything with an open mind and a thirst for knowledge. 
+        
+        This curiosity not only drives my personal adventures but also shapes my professional journey, where I’m constantly seeking to understand complex problems and uncover actionable insights.
+        
+        Please reach out to collaborate! 😊
     design:
       columns: '1'
   # - block: collection
