@@ -38,8 +38,6 @@ profiles:
   - icon: brands/github
     url: https://github.com/notvikke
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/97vigneshvn/
-  - icon: brands/instagram
     url: https://www.instagram.com/not.vikke/
   - icon: brands/whatsapp
     url: https://wa.me/34663130857
