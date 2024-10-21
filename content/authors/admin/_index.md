@@ -35,12 +35,12 @@ profiles:
     label: E-mail Me
 #  - icon: brands/x
 #    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/not.vikke/
   - icon: brands/github
     url: https://github.com/notvikke
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/97vigneshvn/
+  - icon: brands/instagram
+    url: https://www.instagram.com/not.vikke/
 #  - icon: academicons/google-scholar
 #    url: https://scholar.google.com/
 #  - icon: academicons/orcid
@@ -182,6 +182,6 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## About Me
+## 👋 Hey!
 
-Hi! I am a Data Analyst skilled in transforming a variety of datasets into actionable insights. With a Master's in Business Analysis and Big Data from IE University in Madrid and consulting experience at Capgemini, I bring strong communication skills and a knack for working in dynamic environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
+I am a Data Analyst skilled in transforming a variety of datasets into actionable insights. With a Master's in Business Analysis and Big Data from IE University in Madrid and consulting experience at Capgemini, I bring strong communication skills and a knack for working in dynamic environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
