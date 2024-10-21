@@ -117,30 +117,48 @@ skills:
         description: 'NumPy, Pandas, Scikit-Learn, PyCaret, TensorFlow, Streamlit'
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: Java
         description: ''
-        percent: 100
-        icon: chart-bar
+        percent: 70
+        icon: code
+      - name: C++
+        description: ''
+        percent: 70
+        icon: code
       - name: SQL
         description: ''
-        percent: 40
+        percent: 75
         icon: circle-stack
-  - name: Hobbies
+      - name: R
+        description: ''
+        percent: 65
+        icon: code
+      - name: Big Data Tools
+        description: 'Hadoop, Spark, NoSQL (MongoDB), DB2, Qlik Sense, Tableau'
+        percent: 75
+        icon: chart-bar
+      - name: Cloud Tools
+        description: 'Google Cloud Platform, Looker Studio, AWS, GitHub, MLOPs Pipelines'
+        percent: 70
+        icon: cloud
+
+  - name: Soft Skills / Presentation
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
+      - name: Adaptability
+        description: 'Ability to adapt quickly to new environments and software, facilitating seamless integration and rapid productivity.'
+        percent: 85
         icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
+      - name: Troubleshooting Skills
+        description: 'Excellent troubleshooting skills, capable of efficiently identifying and resolving complex technical issues.'
         percent: 80
-        icon: camera
+        icon: tools
+      - name: Team Collaboration
+        description: 'Effective collaboration in diverse teams to achieve project goals.'
+        percent: 90
+        icon: users
+
 
 languages:
   - name: English
@@ -161,8 +179,8 @@ awards:
     awarder: Celonis
     icon: ''
     summary: |
-      I am excited to announce that my team (Lucas Trenzado, Paulino Herrera) has moved on to the finals of the Celonis Datathon!
-      Moreover, grateful to Celonis and IE School of Science and Technology for this opportunity. 
+      Achieved finalist status in the prestigious Celonis Datathon as part of a team with Lucas Trenzado and Paulino Herrera, demonstrating advanced skills in data analysis and effective teamwork.
+
   # - title: Blockchain Fundamentals
   #   url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
   #   date: '2023-07-01'
