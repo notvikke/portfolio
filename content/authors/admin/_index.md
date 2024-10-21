@@ -117,30 +117,26 @@ skills:
         description: 'NumPy, Pandas, Scikit-Learn, PyCaret, TensorFlow, Streamlit'
         percent: 80
         icon: code-bracket
-      - name: Java
+      - name: Java, C++, R
         description: ''
         percent: 70
-        icon: code
-      - name: C++
-        description: ''
-        percent: 70
-        icon: code
+        icon: code-bracket
       - name: SQL
         description: ''
         percent: 75
         icon: circle-stack
-      - name: R
-        description: ''
-        percent: 65
-        icon: code
       - name: Big Data Tools
-        description: 'Hadoop, Spark, NoSQL (MongoDB), DB2, Qlik Sense, Tableau'
+        description: 'Hadoop, Spark, PySpark, NoSQL (MongoDB), DB2'
         percent: 75
         icon: chart-bar
       - name: Cloud Tools
-        description: 'Google Cloud Platform, Looker Studio, AWS, GitHub, MLOPs Pipelines'
+        description: 'Google Cloud Platform, AWS, GitHub, MLOPs Pipelines'
         percent: 70
         icon: cloud
+      - name: Visualization
+        description: 'Looker Studio, Qlik Sense, Tableau, Power BI'
+        percent: 70
+        icon: chart-bar
 
   - name: Soft Skills / Presentation
     color: '#eeac02'
@@ -153,7 +149,7 @@ skills:
       - name: Troubleshooting Skills
         description: 'Excellent troubleshooting skills, capable of efficiently identifying and resolving complex technical issues.'
         percent: 80
-        icon: tools
+        icon: person-simple-walk
       - name: Team Collaboration
         description: 'Effective collaboration in diverse teams to achieve project goals.'
         percent: 90
