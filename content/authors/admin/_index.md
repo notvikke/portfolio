@@ -126,22 +126,26 @@ skills:
         description: ''
         percent: 70
         icon: code-bracket
-      - name: SQL
+      - name: SQL, NoSQL (MongoDB), DB2
         description: ''
         percent: 75
         icon: circle-stack
       - name: Big Data Tools
-        description: 'Hadoop, Spark, PySpark, NoSQL (MongoDB), DB2'
+        description: 'Hadoop, Spark, PySpark, Unix Shell'
         percent: 75
         icon: chart-bar
       - name: Cloud Tools
-        description: 'Google Cloud Platform, AWS, GitHub, MLOPs Pipelines'
+        description: 'Google Cloud, AWS, GitHub, MLOPs Pipelines'
         percent: 70
         icon: cloud
       - name: Visualization
         description: 'Looker Studio, Qlik Sense, Tableau, Power BI'
         percent: 70
         icon: chart-bar
+      - name: Web Development
+        description: 'Flask, Django, Hugo, Gatsby, HTML, CSS'
+        percent: 70
+        icon: code-bracket
 
   - name: Soft Skills / Presentation
     color: '#eeac02'
