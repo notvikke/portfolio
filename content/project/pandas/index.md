@@ -8,6 +8,6 @@ tags:
   - Forcasting
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+Finding the best solution to tackle the demand forcasting inefficiency for a client in textile industry.
 
 <!--more-->
