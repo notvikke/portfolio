@@ -58,6 +58,10 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
+    - name: Verify artifact upload
+      run: |
+        echo "Verifying artifact upload:"
+        ls -la ${{ runner.temp }}/_github_workflow/artifacts
 
   deploy:
     if: github.repository_owner != 'HugoBlox'
