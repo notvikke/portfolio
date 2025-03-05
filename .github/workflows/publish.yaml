@@ -54,10 +54,14 @@ jobs:
       run: |
         echo "Verifying public directory contents:"
         ls -la ./public
+    - name: List runner temp directory before upload
+      run: ls -la ${{ runner.temp }}
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
+    - name: List runner temp directory after upload
+      run: ls -la ${{ runner.temp }}
     - name: Verify artifact upload
       run: |
         echo "Verifying artifact upload:"
