@@ -54,14 +54,11 @@ jobs:
       run: |
         echo "Verifying public directory contents:"
         ls -la ./public
-    - name: List runner temp directory before upload
-      run: ls -la ${{ runner.temp }}
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
-    - name: List runner temp directory after upload
-      run: ls -la ${{ runner.temp }}
+        name: github-pages
     - name: Verify artifact upload
       run: |
         echo "Verifying artifact upload:"
@@ -78,3 +75,5 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
+      with:
+        artifact_name: github-pages  #
