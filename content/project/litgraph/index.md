@@ -1,5 +1,5 @@
 ---
-title: Litgraph NLP Icelandic Text to Graph
+title: Lit-Graph NLP Icelandic Text to Graphs
 date: 2025-03-26
 external_link: https://github.com/notvikke/nlp_litgraph
 tags:
