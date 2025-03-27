@@ -1,13 +1,13 @@
 ---
-title: PyTorch
-date: 2021-10-26
-external_link: https://github.com/pytorch/pytorch
+title: Ai Chatbot (Gemini-1.5-pro)
+date: 2025-03-26
+external_link: https://github.com/notvikke/chatbot_django
 tags:
-  - Hugo
-  - Wowchemy
+  - Django
+  - Bootstrap
   - Markdown
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+This project implements an AI chatbot using the Gemini 1.5 Pro model with a Django backend and Bootstrap frontend.
 
 <!--more-->
