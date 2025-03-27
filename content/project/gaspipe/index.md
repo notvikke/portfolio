@@ -1,5 +1,5 @@
 ---
-title: Gast pipie insidence detection
+title: Gas-Pipe Incidence Detection
 date: 2023-04-20
 external_link: https://github.com/notvikke/Gas_Pipe_Incidence_Sustainability_Datathon
 tags:
