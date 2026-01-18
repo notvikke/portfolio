@@ -11,8 +11,9 @@ design:
 sections:
   - block: collection
     content:
-      title: Selected Projects
+      title: Check these out!
       text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      count: 99
       filters:
         folders:
           - project
