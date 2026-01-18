@@ -30,7 +30,7 @@ role: Data Analysis & Software Development
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:97vigneshvn@gmail.com'
     label: E-mail Me
 #  - icon: brands/x
@@ -40,7 +40,7 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/97vigneshvn/
   - icon: brands/whatsapp
-    url: https://wa.me/34663130857
+    url: https://wa.me/917073860722
   - icon: brands/discord
     url: https://discordapp.com/users/177356469434318848
     
@@ -132,17 +132,17 @@ skills:
         description: 'Hadoop, Spark, PySpark, Unix Shell'
         percent: 75
         icon: chart-bar
-      - name: Cloud Tools
-        description: 'Google Cloud, AWS, GitHub, MLOPs Pipelines'
-        percent: 70
+      - name: Cloud & DevOps
+        description: 'Vercel, AWS, Google Cloud, GitHub Actions, Docker'
+        percent: 80
         icon: cloud
       - name: Visualization
         description: 'Looker Studio, Qlik Sense, Tableau, Power BI'
         percent: 70
         icon: chart-bar
-      - name: Web Development
-        description: 'Flask, Django, Hugo, Gatsby, HTML, CSS'
-        percent: 70
+      - name: Full-Stack Development
+        description: 'Next.js, TypeScript, React, Supabase, Clerk Auth, Vercel, Tailwind CSS'
+        percent: 90
         icon: code-bracket
 
   - name: Soft Skills / Presentation
@@ -161,10 +161,10 @@ skills:
         description: 'Effective collaboration in diverse teams to achieve project goals.'
         percent: 90
         icon: users
-      - name: Prompt Engineering
-        description: 'Proficient in prompt engineering, optimizing interactions with AI models for improved performance and accuracy.'
+      - name: AI Augmented Engineering
+        description: 'Agentic Workflows, LLM Integration, Precision Prompting'
         percent: 90
-        icon: code-bracket
+        icon: cpu-chip
 
 
 languages:
