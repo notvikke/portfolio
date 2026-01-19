@@ -80,6 +80,17 @@ education:
       - C++, Java.
       - Encryption, Network security, Data mining and warehousing. 
 work:
+  - position: Global Insight Provider
+    company_name: Evidencity · Part-time
+    company_url: 'https://www.evidencity.com/'
+    company_logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQFP9BcyzVY6Dw/company-logo_200_200/company-logo_200_200/0/1630521279501/evidencity_inc_logo?e=1737590400&v=beta&t=Fz-5qGu4B6IuspBPOYVJ-5ZDL6NjqCe9Yy_rbRT3vj8'
+    date_start: 2022-11-01
+    date_end: ''
+    summary: |
+      Specialized in Due Diligence & Risk Assessment:
+      - Conducting deep-dive corporate due diligence and background investigations to identify risks and compliance issues for global clients.
+      - Leveraging OSINT tools and public records to provide high-value intelligence, ensuring data accuracy and actionable insights.
+      
   - position: Senior Data Analyst
     company_name: CAPGEMINI - Business Intelligence 
     company_url: 'https://www.capgemini.com/'
@@ -100,16 +111,6 @@ work:
     summary: |
       Responsibilities:
       - Strengthened client interaction, presentation and leadership skills, complemented by comprehensive training in Java, Python, SQL, Hadoop, Spark, Unix, and Talend
-  - position: Global Insight Provider
-    company_name: Evidencity · Part-time
-    company_url: 'https://www.evidencity.com/'
-    company_logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQFP9BcyzVY6Dw/company-logo_200_200/company-logo_200_200/0/1630521279501/evidencity_inc_logo?e=1737590400&v=beta&t=Fz-5qGu4B6IuspBPOYVJ-5ZDL6NjqCe9Yy_rbRT3vj8'
-    date_start: 2022-11-01
-    date_end: ''
-    summary: |
-      Specialized in Due Diligence & Risk Assessment:
-      - Conducting deep-dive corporate due diligence and background investigations to identify risks and compliance issues for global clients.
-      - Leveraging OSINT tools and public records to provide high-value intelligence, ensuring data accuracy and actionable insights.
       
 
 # Skills
@@ -181,6 +182,14 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
+  - title: Foundations of Sustainability
+    url: ''
+    date: '2023-06-01'
+    awarder: IE University - School of Science & Technology
+    icon: ''
+    summary: |
+      Completed a comprehensive course on sustainability foundations, covering environmental, social, and economic aspects of sustainable development and corporate responsibility.
+
   - title: Celonis Datathon 2022
     url: https://www.linkedin.com/feed/update/urn:li:activity:6998982628758425600/
     date: '2022-11-16'
