@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Data Analysis & Software Development
+role: AI Engineer & Full-Stack Developer
 
 # Organizations/Affiliations to display in Biography blox
 #organizations:
@@ -50,9 +50,9 @@ profiles:
 #    url: https://orcid.org/
 
 interests:
-  - Machine Learning
-  - Data Visualization
-  - Artificial Intelligence
+  - Generative AI & LLMs
+  - Full-Stack Systems
+  - Agentic Workflows
 
 education:
   
@@ -105,10 +105,11 @@ work:
     company_url: 'https://www.evidencity.com/'
     company_logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQFP9BcyzVY6Dw/company-logo_200_200/company-logo_200_200/0/1630521279501/evidencity_inc_logo?e=1737590400&v=beta&t=Fz-5qGu4B6IuspBPOYVJ-5ZDL6NjqCe9Yy_rbRT3vj8'
     date_start: 2022-11-01
-    date_end: 2024-03-01
+    date_end: ''
     summary: |
-      Responsibilities include:
-      - Conducted comprehensive online research and executed rigorous data validation to ensure accurate analysis and deliver reliable insights.
+      Specialized in Due Diligence & Risk Assessment:
+      - Conducting deep-dive corporate due diligence and background investigations to identify risks and compliance issues for global clients.
+      - Leveraging OSINT tools and public records to provide high-value intelligence, ensuring data accuracy and actionable insights.
       
 
 # Skills
@@ -141,10 +142,10 @@ skills:
         percent: 70
         icon: chart-bar
       - name: Full-Stack Development
-        description: 'Next.js, TypeScript, React, Supabase, Clerk Auth, Vercel, Tailwind CSS'
+        description: 'Next.js, TypeScript, React, Firebase (Studio), Google Cloud, Supabase, Vercel'
         percent: 90
         icon: code-bracket
-
+  
   - name: Soft Skills / Presentation
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -210,7 +211,7 @@ awards:
 
 ## 👋 Hey!
 
-I am a Data Analyst skilled in transforming a variety of datasets into actionable insights. With a Master's in Business Analysis and Big Data from IE University in Madrid and consulting experience at Capgemini, I bring strong communication skills and a knack for working in dynamic environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
+I am an **AI Engineer** and **Full-Stack Developer** specialized in building intelligent, scalable applications. With a Master’s in Big Data from IE University and consulting experience at Capgemini, I bridge the gap between **Data Science** and **Product Engineering**. My focus is on architecting **Agentic Workflows**, integrating **Large Language Models (LLMs)** into Finance/Legal tech, and shipping production-ready SaaS products using **Next.js** and **Python**.
 
 
 
