@@ -1,6 +1,6 @@
 ---
 title: Legalese.ai
-date: 2024-01-16
+date: 2026-01-16
 external_link: https://github.com/notvikke/Legalese.ai
 tags:
   - TypeScript

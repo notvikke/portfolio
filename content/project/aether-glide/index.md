@@ -1,6 +1,6 @@
 ---
 title: Aether Glide
-date: 2024-01-13
+date: 2026-01-13
 external_link: https://github.com/notvikke/aether-glide
 tags:
   - TypeScript

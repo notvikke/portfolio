@@ -1,6 +1,6 @@
 ---
 title: Storyline - Your Personal Memory Tracker
-date: 2024-01-18
+date: 2026-01-18
 external_link: https://github.com/notvikke/Storyline-io
 tags:
   - TypeScript
