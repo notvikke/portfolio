@@ -1,5 +1,8 @@
 {
-  "total_size_mb": 493.03,
-  "total_loc": 7244160,
+  "total_repos": 23,
+  "most_used_lang": "Jupyter Notebook",
+  "total_contributions": 206,
+  "current_streak": 5,
+  "total_loc": 7244514,
   "last_updated": "2026-01-19"
 }
