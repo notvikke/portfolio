@@ -43,6 +43,8 @@ profiles:
     url: https://wa.me/917073860722
   - icon: brands/discord
     url: https://discordapp.com/users/177356469434318848
+  - icon: brands/instagram
+    url: https://instagram.com/not.vikke
     
 #  - icon: academicons/google-scholar
 #    url: https://scholar.google.com/
