@@ -45,6 +45,13 @@ sections:
         Please reach out to collaborate! 😊
     design:
       columns: '1'
+  - block: markdown
+    content:
+      title: 'Open Source Stats'
+      subtitle: ''
+      text: '{{< github_stats >}}'
+    design:
+      columns: '1'
   # - block: collection
   #   id: papers
   #   content:
