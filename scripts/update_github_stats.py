@@ -82,8 +82,13 @@ def get_github_stats():
             language_sizes[lang_name] = language_sizes.get(lang_name, 0) + size
             
     most_used_lang = "N/A"
-    if language_sizes:
-        most_used_lang = max(language_sizes, key=language_sizes.get)
+    # Filter out Jupyter Notebook from top language consideration but keep it for total size
+    stats_languages = language_sizes.copy()
+    if "Jupyter Notebook" in stats_languages:
+        del stats_languages["Jupyter Notebook"]
+        
+    if stats_languages:
+        most_used_lang = max(stats_languages, key=stats_languages.get)
 
     # 3. Total Contributions (Last Year)
     # totalContributions in calendar includes commits, issues, PRs, reviews, etc.
