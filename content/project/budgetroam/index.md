@@ -1,6 +1,6 @@
 ---
 title: BudgetRoam
-date: 2023-12-28
+date: 2025-06-04
 external_link: https://github.com/notvikke/budgetroam
 tags:
   - TypeScript

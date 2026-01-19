@@ -1,6 +1,6 @@
 ---
 title: Automated Certificate Tracker
-date: 2024-01-05
+date: 2025-11-10
 external_link: https://github.com/notvikke/Automated-Certificate-tracker
 tags:
   - TypeScript
