@@ -211,3 +211,6 @@ awards:
 ## 👋 Hey!
 
 I am a Data Analyst skilled in transforming a variety of datasets into actionable insights. With a Master's in Business Analysis and Big Data from IE University in Madrid and consulting experience at Capgemini, I bring strong communication skills and a knack for working in dynamic environments. I'm passionate about machine learning and AI, constantly exploring new ways to enhance decision-making and drive business growth through data.
+
+{{< github_stats >}}
+

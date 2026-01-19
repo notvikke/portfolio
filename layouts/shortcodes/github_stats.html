@@ -1,0 +1,30 @@
+{{ if .Site.Data.github_stats }}
+<div class="github-stats-container" style="
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #1e1e1e, #2d2d2d);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    color: #e0e0e0;
+">
+    <div class="stat-item" style="flex: 1; min-width: 150px;">
+        <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #aaa; margin-bottom: 0.5rem;">Total Codebase Volume</div>
+        <div style="font-size: 1.8rem; font-weight: bold; color: #4ade80;">{{ .Site.Data.github_stats.total_size_mb }} MB</div>
+    </div>
+    <div style="width: 1px; height: 50px; background: #444; display: none; @media (min-width: 600px) { display: block; }"></div>
+    <div class="stat-item" style="flex: 1; min-width: 150px;">
+        <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #aaa; margin-bottom: 0.5rem;">Est. Lines of Code</div>
+        <div style="font-size: 1.8rem; font-weight: bold; color: #60a5fa;">{{ lang.FormatNumberCustom 0 .Site.Data.github_stats.total_loc }}</div>
+    </div>
+</div>
+<div style="text-align: center; font-size: 0.7rem; color: #666; margin-top: 0.5rem;">
+    Last updated: {{ .Site.Data.github_stats.last_updated }}
+</div>
+{{ end }}
