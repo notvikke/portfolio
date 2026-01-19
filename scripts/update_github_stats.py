@@ -41,11 +41,9 @@ def get_github_stats():
           }
         }
         contributionsCollection {
-          measurements {
-             totalCommitContributions
-             totalIssueContributions
-             totalPullRequestContributions
-          }
+          totalCommitContributions
+          totalIssueContributions
+          totalPullRequestContributions
           contributionCalendar {
             totalContributions
             weeks {
