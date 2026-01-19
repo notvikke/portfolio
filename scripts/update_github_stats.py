@@ -17,11 +17,7 @@ def run_query(query, variables=None):
         raise Exception(f"Query failed to run by returning code of {request.status_code}. {query}")
 
 def get_github_stats():
-    # GraphQL Query
-    # limit repos to 100 for language stats. If user has > 100, we prioritize the top 100 most recently updated or we could page.
-    # For simplicity and speed in a portfolio action, 100 is usually sufficient for "Most Used" approximation. 
-    # But let's try to get total count correctly.
-    
+    # GraphQL Query - Fetch repos for total count and stars
     query = """
     query {
       viewer {
@@ -30,6 +26,7 @@ def get_github_stats():
           totalCount
           nodes {
             name
+            stargazerCount
             languages(first: 10) {
               edges {
                 size
@@ -46,12 +43,6 @@ def get_github_stats():
           totalPullRequestContributions
           contributionCalendar {
             totalContributions
-            weeks {
-              contributionDays {
-                contributionCount
-                date
-              }
-            }
           }
         }
       }
@@ -69,10 +60,12 @@ def get_github_stats():
     # 1. Total Repositories
     total_repos = data["repositories"]["totalCount"]
     
-    # 2. Most Used Language
-    language_sizes = {}
+    # 2. Total Stars
     repos = data["repositories"]["nodes"]
+    total_stars = sum(repo["stargazerCount"] for repo in repos)
     
+    # 3. Calculate Total LOC (from language sizes)
+    language_sizes = {}
     for repo in repos:
         if not repo["languages"]["edges"]:
             continue
@@ -80,121 +73,38 @@ def get_github_stats():
             lang_name = edge["node"]["name"]
             size = edge["size"]
             language_sizes[lang_name] = language_sizes.get(lang_name, 0) + size
-            
-    most_used_lang = "N/A"
-    # Filter out Jupyter Notebook from top language consideration but keep it for total size
-    stats_languages = language_sizes.copy()
-    if "Jupyter Notebook" in stats_languages:
-        del stats_languages["Jupyter Notebook"]
-        
-    if stats_languages:
-        most_used_lang = max(stats_languages, key=stats_languages.get)
-
-    # 3. Total Contributions (Last Year)
-    # totalContributions in calendar includes commits, issues, PRs, reviews, etc.
-    total_contributions = data["contributionsCollection"]["contributionCalendar"]["totalContributions"]
     
-    # 4. Current Streak
-    calendar_weeks = data["contributionsCollection"]["contributionCalendar"]["weeks"]
-    
-    # Flatten days
-    all_days = []
-    for week in calendar_weeks:
-        for day in week["contributionDays"]:
-            all_days.append(day)
-            
-    # Sort by date descending just to be safe, though usually they are asc
-    all_days.sort(key=lambda x: x["date"], reverse=True)
-    
-    current_streak = 0
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    
-    # Find start index (today or yesterday)
-    # API might return future days if we are strictly checking "today" in UTC vs local.
-    # We'll just look for the most recent day with contributions to start the streak if it's today or yesterday?
-    # Strict streak: Streak is alive if you contributed today OR yesterday.
-    
-    # Let's simple iterate backwards
-    streak_alive = True
-    
-    # Check if we have data for today
-    has_contributed_today = False
-    
-    # Filter out future days just in case
-    valid_days = [d for d in all_days if d["date"] <= today_str]
-    
-    if not valid_days:
-        current_streak = 0
-    else:
-        # Check specific today/yesterday logic
-        # For simplicity: count backwards from latest available day. 
-        # If the gap between today and the last contribution is > 1 day, streak is 0.
-        
-        last_contribution_date_str = None
-        
-        for day in valid_days:
-            if day["contributionCount"] > 0:
-                last_contribution_date_str = day["date"]
-                break
-        
-        if last_contribution_date_str:
-            last_date = datetime.strptime(last_contribution_date_str, "%Y-%m-%d")
-            today = datetime.strptime(today_str, "%Y-%m-%d")
-            delta = (today - last_date).days
-            
-            if delta > 1:
-                current_streak = 0
-            else:
-                # Streak is valid, count it
-                # Logic: Count consecutive days > 0 starting from that last_date
-                current_count = 0
-                
-                # Re-iterate or find index
-                start_index = -1
-                for i, day in enumerate(valid_days):
-                    if day["date"] == last_contribution_date_str:
-                        start_index = i
-                        break
-                
-                # Check backwards (chronologically) from the start day?
-                # valid_days is sorted DESC (newest first).
-                # So we iterate forward in valid_days list
-                
-                # previous_date meant the "next day" in the loop (which is chronologically older)
-                # We need to ensure continuity.
-                
-                current_ref_date = datetime.strptime(valid_days[start_index]["date"], "%Y-%m-%d")
-                
-                for i in range(start_index, len(valid_days)):
-                    day = valid_days[i]
-                    day_date = datetime.strptime(day["date"], "%Y-%m-%d")
-                    expected_date = current_ref_date - timedelta(days=current_count)
-                    
-                    if day_date == expected_date:
-                        if day["contributionCount"] > 0:
-                            current_count += 1
-                        else:
-                            break
-                    else:
-                        # Missing a day in the list? (Shouldn't happen with grid) or we skipped a day that had 0?
-                        # If we have 0 count at expected date, we stop.
-                        # Wait, valid_days contains ALL days (including 0 count).
-                         if day["contributionCount"] == 0:
-                            break
-                            
-                current_streak = current_count
-        else:
-            current_streak = 0
-
-    # Calculate Total LOC
     total_bytes = sum(language_sizes.values())
     total_loc = int(total_bytes / 40)
 
+    # 4. Current Year Contributions (contributionsCollection is last 12 months by default)
+    current_year_contributions = data["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+    
+    # 5. Active Projects (Last 90 Days)
+    # Count repos with activity in last 90 days
+    ninety_days_ago = (datetime.now() - timedelta(days=90)).isoformat()
+    active_projects = 0
+    
+    # Need to fetch pushed_at for each repo - we'll use a separate query for this
+    # For now, let's use a simple REST API call for each repo to get pushed_at
+    for repo in repos[:20]:  # Limit to top 20 to avoid rate limits
+        repo_name = repo["name"]
+        try:
+            rest_url = f"https://api.github.com/repos/{data['login']}/{repo_name}"
+            headers = {"Authorization": f"Bearer {os.environ.get('GH_TOKEN')}"}
+            resp = requests.get(rest_url, headers=headers)
+            if resp.status_code == 200:
+                repo_data = resp.json()
+                pushed_at = repo_data.get("pushed_at", "")
+                if pushed_at >= ninety_days_ago:
+                    active_projects += 1
+        except:
+            pass
+    
     stats = {
         "total_repos": total_repos,
-        "most_used_lang": most_used_lang,
-        "total_contributions": total_contributions, # formatted in frontend
-        "current_streak": current_streak,
+        "active_projects": active_projects,
+        "current_year_contributions": current_year_contributions,
         "total_loc": total_loc,
         "last_updated": datetime.now().strftime("%Y-%m-%d")
     }
