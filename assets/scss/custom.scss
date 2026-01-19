@@ -1,0 +1,47 @@
+/* Fix search dropdown overlay issue */
+
+/* Ensure search results dropdown closes or repositions properly on scroll */
+.search-results {
+  position: absolute !important;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Hide search results when scrolling */
+body.scrolling .search-results {
+  display: none !important;
+}
+
+/* Alternative: Make search results fixed to viewport instead of absolute */
+.search-hit-type,
+.search-hit-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ensure search dropdown doesn't overflow viewport */
+#search-query {
+  position: relative;
+}
+
+.search-results-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 70vh;
+  overflow-y: auto;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* Close search results on scroll */
+@media (max-width: 768px) {
+  .search-results {
+    max-height: 300px;
+  }
+}
