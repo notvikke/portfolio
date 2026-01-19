@@ -1,1 +1,103 @@
-<!-- Footer removed as per user request -->
+{{ if .Site.Data.github_stats }}
+<div class="github-stats-container" style="
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #000;
+    color: #e0e0e0;
+    width: 100%;
+    border-top: 1px solid #222;
+    font-family: 'Inter', sans-serif;
+">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+        <h3
+            style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; font-weight: 700; color: #fff; letter-spacing: -0.5px;">
+            Open Source Impact
+        </h3>
+
+        <div style="
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        ">
+            <!-- Repositories -->
+            <div class="stat-card"
+                style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left; min-width: 200px; flex: 1;">
+                <div style="color: #4ade80; margin-bottom: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <div style="font-size: 2rem; font-weight: 800; color: #fff; line-height: 1;">{{
+                    .Site.Data.github_stats.total_repos }}</div>
+                <div style="font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 0.5rem;">Repositories</div>
+            </div>
+
+            <!-- Lines of Code -->
+            <div class="stat-card"
+                style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left; min-width: 200px; flex: 1;">
+                <div style="color: #60a5fa; margin-bottom: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <div style="font-size: 1.8rem; font-weight: 800; color: #fff; line-height: 1;">{{
+                    lang.FormatNumberCustom 0 .Site.Data.github_stats.total_loc }}</div>
+                <div style="font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 0.5rem;">Lines of Code</div>
+            </div>
+
+            <!-- Streak -->
+            <div class="stat-card"
+                style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left; min-width: 200px; flex: 1;">
+                <div style="color: #f472b6; margin-bottom: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                    </svg>
+                </div>
+                <div style="font-size: 2rem; font-weight: 800; color: #fff; line-height: 1;">{{
+                    .Site.Data.github_stats.current_streak }}</div>
+                <div style="font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 0.5rem;">Day Streak</div>
+            </div>
+
+            <!-- Contributions -->
+            <div class="stat-card"
+                style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left; min-width: 200px; flex: 1;">
+                <div style="color: #a78bfa; margin-bottom: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 11 12 14 22 4"></polyline>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                </div>
+                <div style="font-size: 1.8rem; font-weight: 800; color: #fff; line-height: 1;">{{
+                    lang.FormatNumberCustom 0 .Site.Data.github_stats.total_contributions }}</div>
+                <div style="font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 0.5rem;">Contributions</div>
+            </div>
+
+            <!-- Most Used Language -->
+            <div class="stat-card"
+                style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left; min-width: 200px; flex: 1;">
+                <div style="color: #facc15; margin-bottom: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                </div>
+                <div style="font-size: 2rem; font-weight: 800; color: #fff; line-height: 1;">{{
+                    .Site.Data.github_stats.most_used_lang }}</div>
+                <div style="font-size: 0.85rem; color: #888; font-weight: 500; margin-top: 0.5rem;">Top Language</div>
+            </div>
+
+        </div>
+        <div style="text-align: center; font-size: 0.7rem; color: #444; margin-top: 2rem;">
+            Last updated: {{ .Site.Data.github_stats.last_updated }}
+        </div>
+    </div>
+</div>
+{{ end }}
