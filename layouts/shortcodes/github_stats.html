@@ -1,62 +1,92 @@
 {{ if .Site.Data.github_stats }}
 <div class="github-stats-container" style="
-    margin-top: 2rem;
-    padding: 2rem;
-    background: linear-gradient(145deg, #121212, #1e1e1e);
-    border-radius: 16px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-    border: 1px solid #333;
-    color: #e0e0e0;
+    margin-top: 1rem;
     width: 100%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Inter', sans-serif;
 ">
-    <h3
-        style="text-align: center; margin-bottom: 1.5rem; font-size: 1.2rem; font-weight: 600; color: #fff; text-transform: uppercase; letter-spacing: 1px;">
-        Open Source Impact
-    </h3>
-
     <div style="
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 1.5rem;
-        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
     ">
-        <!-- Total Repos -->
-        <div class="stat-card">
-            <div style="font-size: 0.8rem; color: #aaa; margin-bottom: 0.5rem; text-transform: uppercase;">Repositories
+        <!-- Repositories -->
+        <div class="stat-card"
+            style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left;">
+            <div style="color: #4ade80; margin-bottom: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
             </div>
             <div style="font-size: 1.8rem; font-weight: 700; color: #fff;">{{ .Site.Data.github_stats.total_repos }}
             </div>
+            <div style="font-size: 0.8rem; color: #888; font-weight: 500;">Repositories</div>
         </div>
 
-        <!-- Most Used Language -->
-        <div class="stat-card">
-            <div style="font-size: 0.8rem; color: #aaa; margin-bottom: 0.5rem; text-transform: uppercase;">Top Language
+        <!-- Lines of Code -->
+        <div class="stat-card"
+            style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left;">
+            <div style="color: #60a5fa; margin-bottom: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
             </div>
-            <div style="font-size: 1.8rem; font-weight: 700; color: #facc15;">{{ .Site.Data.github_stats.most_used_lang
-                }}</div>
-        </div>
-
-        <!-- Total Contributions -->
-        <div class="stat-card">
-            <div style="font-size: 0.8rem; color: #aaa; margin-bottom: 0.5rem; text-transform: uppercase;">Contributions
-            </div>
-            <div style="font-size: 1.8rem; font-weight: 700; color: #4ade80;">{{ lang.FormatNumberCustom 0
-                .Site.Data.github_stats.total_contributions }}</div>
+            <div style="font-size: 1.8rem; font-weight: 700; color: #fff;">{{ lang.FormatNumberCustom 0
+                .Site.Data.github_stats.total_loc }}</div>
+            <div style="font-size: 0.8rem; color: #888; font-weight: 500;">Lines of Code</div>
         </div>
 
         <!-- Streak -->
-        <div class="stat-card">
-            <div style="font-size: 0.8rem; color: #aaa; margin-bottom: 0.5rem; text-transform: uppercase;">Current
-                Streak</div>
-            <div style="font-size: 1.8rem; font-weight: 700; color: #f472b6;">{{ .Site.Data.github_stats.current_streak
-                }} Days</div>
+        <div class="stat-card"
+            style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left;">
+            <div style="color: #f472b6; margin-bottom: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+            </div>
+            <div style="font-size: 1.8rem; font-weight: 700; color: #fff;">{{ .Site.Data.github_stats.current_streak }}
+            </div>
+            <div style="font-size: 0.8rem; color: #888; font-weight: 500;">Day Streak</div>
         </div>
-    </div>
 
-    <div style="text-align: center; font-size: 0.7rem; color: #555; margin-top: 1.5rem;">
+        <!-- Contributions -->
+        <div class="stat-card"
+            style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left;">
+            <div style="color: #a78bfa; margin-bottom: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+            </div>
+            <div style="font-size: 1.8rem; font-weight: 700; color: #fff;">{{ lang.FormatNumberCustom 0
+                .Site.Data.github_stats.total_contributions }}</div>
+            <div style="font-size: 0.8rem; color: #888; font-weight: 500;">Contributions</div>
+        </div>
+
+        <!-- Most Used Language -->
+        <div class="stat-card"
+            style="background: #111; padding: 1.5rem; border-radius: 12px; border: 1px solid #222; text-align: left;">
+            <div style="color: #facc15; margin-bottom: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>
+            </div>
+            <div style="font-size: 1.8rem; font-weight: 700; color: #fff;">{{ .Site.Data.github_stats.most_used_lang }}
+            </div>
+            <div style="font-size: 0.8rem; color: #888; font-weight: 500;">Top Language</div>
+        </div>
+
+    </div>
+    <div style="text-align: right; font-size: 0.6rem; color: #444; margin-top: 0.5rem; margin-right: 0.5rem;">
         Last updated: {{ .Site.Data.github_stats.last_updated }}
     </div>
 </div>

@@ -183,11 +183,16 @@ def get_github_stats():
         else:
             current_streak = 0
 
+    # Calculate Total LOC
+    total_bytes = sum(language_sizes.values())
+    total_loc = int(total_bytes / 40)
+
     stats = {
         "total_repos": total_repos,
         "most_used_lang": most_used_lang,
         "total_contributions": total_contributions, # formatted in frontend
         "current_streak": current_streak,
+        "total_loc": total_loc,
         "last_updated": datetime.now().strftime("%Y-%m-%d")
     }
     
