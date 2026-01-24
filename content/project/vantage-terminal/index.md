@@ -1,6 +1,6 @@
 ---
 title: Vantage Terminal // Hybrid FinTech Analyzer
-date: 2026-01-25
+date: 2026-01-24
 external_link: https://github.com/notvikke/Vantage-fintech-hybrid
 tags:
   - Go
@@ -10,13 +10,11 @@ tags:
   - AI
   - Real-time
   - Big Data
-image:
-  caption: "Vantage Terminal Dashboard"
-  focal_point: Smart
-summary: An advanced, real-time financial analytics platform designed for high-frequency crypto trading insights.
 ---
 
 **Vantage Terminal** is an advanced, real-time financial analytics platform designed for high-frequency crypto trading insights. It combines a Go-based ingestion engine, Python AI agents for technical analysis, and a modern Next.js dashboard.
+
+<!--more-->
 
 ## 🚀 Key Features
 
