@@ -128,8 +128,8 @@ skills:
         description: ''
         percent: 70
         icon: code-bracket
-      - name: SQL, NoSQL (MongoDB), DB2
-        description: ''
+      - name: SQL, NoSQL
+        description: 'Neon (PostgreSQL), TimescaleDB, MongoDB, DB2'
         percent: 75
         icon: circle-stack
       - name: Big Data Tools
@@ -137,7 +137,7 @@ skills:
         percent: 75
         icon: chart-bar
       - name: Cloud & DevOps
-        description: 'Vercel, AWS, Google Cloud, GitHub Actions, Docker'
+        description: 'Vercel, AWS, Google Cloud, GitHub Actions, Docker, Redpanda, Kafka'
         percent: 80
         icon: cloud
       - name: Visualization
@@ -145,9 +145,13 @@ skills:
         percent: 70
         icon: chart-bar
       - name: Full-Stack Development
-        description: 'Next.js, TypeScript, React, Firebase (Studio), Google Cloud, Supabase, Vercel'
+        description: 'Next.js, TypeScript, React, Framer Motion, Shadcn/UI, Firebase, Supabase'
         percent: 90
         icon: code-bracket
+      - name: Backend & Systems
+        description: 'Go (Golang), Python, Node.js'
+        percent: 85
+        icon: server-stack
   
   - name: Soft Skills / Presentation
     color: '#eeac02'
