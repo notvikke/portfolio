@@ -137,19 +137,19 @@ skills:
         percent: 75
         icon: chart-bar
       - name: Cloud & DevOps
-        description: 'Vercel, AWS, Google Cloud, GitHub Actions, Docker, Redpanda, Kafka'
-        percent: 80
+        description: 'Kubernetes, Helm, Vault, Vercel, AWS, Google Cloud, Docker, Redpanda'
+        percent: 85
         icon: cloud
       - name: Visualization
         description: 'Looker Studio, Qlik Sense, Tableau, Power BI'
         percent: 70
         icon: chart-bar
       - name: Full-Stack Development
-        description: 'Next.js, TypeScript, React, Framer Motion, Shadcn/UI, Firebase, Supabase'
+        description: 'Next.js, Vite, TypeScript, React, Framer Motion, Shadcn/UI, Firebase, Supabase'
         percent: 90
         icon: code-bracket
       - name: Backend & Systems
-        description: 'Go (Golang), Python, Node.js'
+        description: 'Rust, Go (Golang), Python, Node.js'
         percent: 85
         icon: server-stack
   
