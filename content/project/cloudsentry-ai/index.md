@@ -1,6 +1,6 @@
 ---
 title: CloudSentry AI
-date: 2024-02-08
+date: 2026-02-08
 external_link: https://github.com/notvikke/Cloudsentry-AI
 tags:
   - AWS Bedrock
