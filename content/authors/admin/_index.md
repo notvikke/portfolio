@@ -121,7 +121,7 @@ skills:
   - name: Technical Skills
     items:
       - name: Python
-        description: 'NumPy, Pandas, Scikit-Learn, PyCaret, TensorFlow, Streamlit'
+        description: 'NumPy, Pandas, Scikit-Learn, PyCaret, TensorFlow, Streamlit, Boto3'
         percent: 80
         icon: code-bracket
       - name: Java, C++, R
@@ -137,7 +137,7 @@ skills:
         percent: 75
         icon: chart-bar
       - name: Cloud & DevOps
-        description: 'Kubernetes, Helm, Vault, Vercel, AWS, Google Cloud, Docker, Redpanda'
+        description: 'Kubernetes, Helm, Vault, Vercel, AWS (CDK, Bedrock, EventBridge, Amplify), Google Cloud, Docker, Redpanda'
         percent: 85
         icon: cloud
       - name: Visualization
@@ -145,7 +145,7 @@ skills:
         percent: 70
         icon: chart-bar
       - name: Full-Stack Development
-        description: 'Next.js, Vite, TypeScript, React, Framer Motion, Shadcn/UI, Firebase, Supabase'
+        description: 'Next.js, Vite, TypeScript, React, TailwindCSS, Framer Motion, Shadcn/UI, Firebase, Supabase'
         percent: 90
         icon: code-bracket
       - name: Backend & Systems
